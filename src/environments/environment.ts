@@ -1,5 +1,5 @@
 
 export const environment = {
   production: false,
-  lembretesApiUrl: ''
+  lembretesApiUrl: 'https://deviup.com.br:3001/api/lembrete'
 };
