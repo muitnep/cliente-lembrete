@@ -3,7 +3,7 @@
         <div class="col-md-8 mx-auto">
             <app-error-msg></app-error-msg>
             <div class="text-right">
-                <button type="button" class="btn btn-sucess" router-link="/lembrete/criar">Novo Lembrete</button>
+                <button type="button" class="btn btn-success" routerLink="/lembrete/criar">Novo lembrete</button>
             </div>
             <div class="text-center" *ngIf="!existemLembretes()">
                 Nenhum lembrete cadastrado.
@@ -14,14 +14,14 @@
         <div class="col-md-8 mx-auto">
             <div class="card">
                 <div class="card-header">
-                    <span class="badge badge-pill" [class.badge-danger]="lembrete.prioridade == 'ALTA'"
-                        [class.badge-warning]="lembrete.priridade == 'MEDIA'"
-                        [class.badge-sucess="lembrete.prioridade == 'BAIXA'" ]>
-                        PRIORIDADE {{ lembrete.prioridade }}
+                    <span class="badge badge-pill" [class.badge-danger]="lembrete.prioridade == 'ALTA' "
+                        [class.badge-warning]="lembrete.prioridade == 'MEDIA' "
+                        [class.badge-success]="lembrete.prioridade == 'BAIXA' ">
+                        PRIORIDADE {{lembrete.prioridade}}
                     </span>
                 </div>
                 <div class="card-body">
-                    <p class="card-text">{{ lembrete.conteudo }}</p>
+                    <p class="card-text">{{lembrete.conteudo}}</p>
                 </div>
                 <div class="card-footer">
                     <div class="text-right">
@@ -34,20 +34,4 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
