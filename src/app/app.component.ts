@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   titulo = 'CRUD de lembretes com o Angular';
+
 }
+
