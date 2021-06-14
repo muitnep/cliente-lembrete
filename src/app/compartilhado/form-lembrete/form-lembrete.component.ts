@@ -6,6 +6,7 @@ import { Lembrete } from 'src/app/interfaces/lembrete';
   templateUrl: './form-lembrete.component.html',
   styleUrls: ['./form-lembrete.component.css']
 })
+
 export class FormLembreteComponent {
   @Input() lembrete: Lembrete = <Lembrete>{};
   @Output() outputLembrete: EventEmitter<Lembrete> = new EventEmitter();
